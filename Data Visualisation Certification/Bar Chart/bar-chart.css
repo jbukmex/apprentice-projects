@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+#chart-container {
+    margin: 30px;
+    position: relative;
+}
+
+#title {
+    font-size: 32px;
+}
+
+#subtitle {
+    font-size: 16px;
+    margin-top: -10px;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+#tooltip {
+    position: absolute;
+    background: rbga(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    display: none;
+}
