@@ -1,0 +1,25 @@
+body {
+    background-color: #f1f1f1;
+}
+
+#title, #description {
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.section {
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+p, label {
+    margin: 5px;
+}
+
+#submit {
+    margin: 20px;
+}

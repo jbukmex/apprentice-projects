@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Build a Survey Form</title>
+    </head>
+    <body>
+        <header>
+            <h1 id="title">What's your favourite summer activity?</h1>
+            <p id="description">Summer Holidays are brilliant, we all know that, but what's your favourite thing to do during the summer? Self-improvement, develop social connections or just chill all summer long?</p>
+        </header>
+        <form id="survey-form">
+            <div class="details section">
+                <div class="form-group">
+                    <label id="name-label" for="name"><p>Input your Name.</p><input id="name" type="text" required placeholder="Jon Smith"></label>
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email"><p>Input your Email.</p><input id="email" type="email" required placeholder="noreply@jsmith.com"></label>
+                </div>
+                <div class="form-group">    
+                    <label id="number-label" for="number"><p>Rate your last summer: 1-10.</p><input id="number" type="number" min="1" max="10" placeholder="10"></label>
+                </div>
+            </div>
+            <div class="choices section">
+                <div class="form-group">
+                    <p>What's your favourite summer activity?</p>
+                    <select id="dropdown">
+                        <option disabled selected value>
+                            Choose One.
+                        </option>
+                        <option value="gym">
+                            Hit the gym.
+                        </option>
+                        <option value="friends">
+                            Go into town with friends.
+                        </option>
+                        <option value="bfgf">
+                            Chill with your bf/gf.
+                        </option>
+                        <option value="study">
+                            Study.
+                        </option>
+                        <option value="chill">
+                            Chill at home.
+                        </option>
+                        <option value="sleepovers">
+                            Sleepovers.
+                        </option>
+                        <option value="nights">
+                            Nights out.
+                        </option>
+                        <option value="holidays">
+                            Holidays away from home.
+                        </option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>What social level do you consider yourself?</p>
+                    <label>
+                      <input name="radios" value="whoknows" type="radio" class="input-radio" checked="">Who knows?</label>
+                    <label>
+                      <input name="radios" value="extrovert" type="radio" class="input-radio">Extrovert</label>
+                    <label>
+                      <input name="radios" value="introvert" type="radio" class="input-radio">Introvert</label>
+                </div>
+                <div class="form-group checkboxes">
+                    <p>Which activities do you plan to do next summer?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label><input name="willdo" value="friends" type="checkbox" class="input-checkbox">Hang out with friends</label>
+                    <label><input name="willdo" value="nights" type="checkbox" class="input-checkbox">Nights out with friends</label>
+                    <label><input name="willdo" value="dates" type="checkbox" class="input-checkbox">Go on dates</label>
+                    <label><input name="willdo" value="family" type="checkbox" class="input-checkbox">See family</label>
+                    <label><input name="willdo" value="stronger" type="checkbox" class="input-checkbox">Get stronger</label>
+                    <label><input name="willdo" value="smarter" type="checkbox" class="input-checkbox">Get Smarter</label>
+                    <label><input name="willdo" value="films" type="checkbox" class="input-checkbox">See films</label>
+                    <label><input name="willdo" value="friendships" type="checkbox" class="input-checkbox">Improve friendships</label>
+                    <label><input name="willdo" value="life" type="checkbox" class="input-checkbox">Rethink Life</label>
+                    <label><input name="willdo" value="plan" type="checkbox" class="input-checkbox">Plan for the next year</label>
+                    <label><input name="willdo" value="work" type="checkbox" class="input-checkbox">Work</label>
+                    <label><input name="willdo" value="job" type="checkbox" class="input-checkbox">Get a new job</label>
+                </div>
+            </div>
+            <div class="extra section">
+                <div class="form-group">
+                    <p>Anything else you enjoy doing during summers?</p>
+                    <textarea name="comment" placeholder="I love going on long walks and seeing nature..." rows="3" cols="70"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
